@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Stanley Martin Lieber (Manhattan, Nueva York, 28 de diciembre de 1922 - Los Ángeles, California, 12 de noviembre de 2018),​ más conocido como Stan Lee, fue un escritor y editor de cómics estadounidense, además de productor y actor ocasional de cine." />
+        <meta name="description" content="Stanley Martin Lieber (Manhattan, Nueva York, 28 de diciembre de 1922 - Los Ángeles, California, 12 de noviembre de 2018), más conocido como Stan Lee, fue un escritor y editor de cómics estadounidense, creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más." />
         <meta name="author" content="skDev" />
-        <title>Stanley Martin Lieber (Stan Lee)</title>
+        <meta name="keywords" content="Stan Lee, Marvel Comics, Spider-Man, X-Men, Avengers, superhero, cómics" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tudominio.com/" />
+        <meta property="og:title" content="Tributo a Stan Lee - El Creador de Sueños" />
+        <meta property="og:description" content="Un homenaje al legendario creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más héroes de Marvel." />
+        <meta property="og:image" content="assets/Stan_Lee_in_the_army.jpg" />
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://tudominio.com/" />
+        <meta name="twitter:title" content="Tributo a Stan Lee - El Creador de Sueños" />
+        <meta name="twitter:description" content="Un homenaje al legendario creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más héroes de Marvel." />
+        <meta name="twitter:image" content="assets/Stan_Lee_in_the_army.jpg" />
+        
+        <title>Tributo a Stan Lee - El Creador de Sueños</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- AOS Animation Library CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -26,20 +44,21 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
+        <header class="bg-primary bg-gradient text-white" data-aos="fade-down">
             <div class="container px-4 text-center">
-                <img src="assets/Stan_Lee_in_the_army.jpg" class="rounded img-fluid" alt="Stan Lee en la armada">
-                <h1 class="fw-bolder mt-4">En memoria de un creador de sueños</h1>
-                <p class="lead">Stanley Martin Lieber (Manhattan, Nueva York, 28 de diciembre de 1922 - Los Ángeles, California, 12 de noviembre de 2018),​ más conocido como Stan Lee, fue un escritor y editor de cómics estadounidense, además de productor y actor ocasional de cine.</p>
-                <a class="btn btn-lg btn-light" href="#biografia">¿Quién era él?</a>
+                <img src="assets/Stan_Lee_in_the_army.jpg" class="rounded img-fluid mb-4 shadow-lg" alt="Stan Lee en la armada de los Estados Unidos durante la Segunda Guerra Mundial" loading="lazy" width="600" height="400">
+                <h1 class="fw-bolder mt-4 display-4">En memoria de un creador de sueños</h1>
+                <p class="lead">Stanley Martin Lieber (Manhattan, Nueva York, 28 de diciembre de 1922 - Los Ángeles, California, 12 de noviembre de 2018), más conocido como Stan Lee, fue un escritor y editor de cómics estadounidense, creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más héroes icónicos.</p>
+                <a class="btn btn-lg btn-light btn-primary me-2" href="#biografia" aria-label="Ver biografía de Stan Lee">¿Quién era él?</a>
+                <a class="btn btn-lg btn-outline-light" href="#obras" aria-label="Ver obras de Stan Lee">Sus creaciones</a>
             </div>
         </header>
         <!-- Sección biografía-->
-        <section id="biografia">
+        <section id="biografia" class="py-5" data-aos="fade-up">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>Biografía</h2>
+                        <h2 class="mb-4 text-primary"><i class="fas fa-user me-2"></i>Biografía</h2>
                         <p class="lead">Es principalmente conocido por haber creado personajes icónicos del mundo del cómic tales como Spider-Man, X-Men, Los 4 Fantásticos, Hulk, Iron Man, Thor, Daredevil, Doctor Strange, Black Panther, Ant-Man y Bruja Escarlata, entre otros muchos superhéroes, casi siempre acompañado de los dibujantes Steve Ditko y Jack Kirby. El trabajo de Stan Lee fue fundamental para expandir Marvel Comics, llevándola de una pequeña casa publicitaria a una gran corporación multimedia. Todavía hoy, los cómics de Marvel se distinguen por indicar siempre «Stan Lee presenta» en los rótulos de presentación. También tuvo un programa televisivo en History Channel en donde buscaba superhumanos «reales».</p>
                         <p class="lead">Stanley Martin Lieber nació el 28 de diciembre de 1922 en Manhattan, Nueva York, hijo de Celia y Jack Lieber, un matrimonio de inmigrantes judíos rumanos. Su padre era sastre y tuvo dificultades en su trabajo debido a la Gran Depresión. Stan tenía un hermano menor llamado Larry Lieber.</p>
                         <p class="lead">En 2006 dijo haber disfrutado de los libros y películas, especialmente las protagonizadas por Errol Flynn. Estudió en el instituto DeWitt Clinton del Bronx y mientras, ejerció diversos trabajos como recadero, escritor de obituarios y comunicados de prensa, hasta que a finales de 1940, poco después de concluir la escuela secundaria, consiguió un trabajo de ayudante en la editorial Timely Comics (hoy Marvel Comics) entonces propiedad de Martin Goodman.</p>
@@ -49,18 +68,18 @@
             </div>
         </section>
         <!-- Sección Obra-->
-        <section class="bg-light" id="obras">
+        <section class="bg-light py-5" id="obras" data-aos="fade-up">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>Obra</h2>
+                        <h2 class="mb-4 text-primary"><i class="fas fa-book me-2"></i>Obra</h2>
                         <p class="lead">Entre sus creaciones destacan personajes que forman parte de la iconografía universal como Spider-Man, los X-Men, Iron Man, Thor, el Doctor Strange, Daredevil, Los Cuatro Fantásticos, el increíble Hulk, los Vengadores, Pantera Negra, Silver Surfer, y Nick Fury, además de su intromisión al mundo del manga con Heroman y el guion de la serie Ultimo.</p>
                         <p class="lead">Su carisma y capacidad creativa influyeron en muchos autores posteriores. Algunos de los rasgos característicos de su obra son:</p>
-                        <ul>
-                            <li>La humanización de los personajes, más allá de su identidad superheroica. Para ello, insiste en que todos sus héroes deben tener un punto débil.</li>
-                            <li>Un lenguaje grandilocuente y recargado, que en el caso de artículos y textos publicitarios, llega a estar entre la autoparodia y lo circense.</li>
-                            <li>Daba una gran libertad de movimientos a sus dibujantes, por medio del llamado «método Marvel»: Lee hacía una sinopsis de la historia, que pasaba al dibujante, y luego escribía los diálogos basándose en el dibujo acabado. En ciertos casos, esto hacía difícil saber qué parte de la historia era de Lee, y qué parte del dibujante y que parte era del guionista.</li>
-                            <li>Insistió en llamar a sus personajes con nombre y apellido con la misma letra inicial (Peter Parker, Loki Laufeyson, Matt Murdock, Stephen Strange, Dum Dum Dugan, Fantastic Four, Doctor Doom, Curtis Connors, Bruce Banner, Scott Summers, Susan Storm, Reed Richards, Otto Octavius, Green Goblin, Silver Surfer, Warren Worthington, Pepper Potts, Fin Fang Foom, Happy Hogan y J. Jonah Jameson, entre otros).</li>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i><strong>Humanización de personajes:</strong> Más allá de su identidad superheroica. Todos sus héroes tienen un punto débil.</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i><strong>Lenguaje grandilocuente:</strong> Recargado, entre la autoparodia y lo circense en artículos y textos publicitarios.</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i><strong>Método Marvel:</strong> Gran libertad a dibujantes. Lee hacía una sinopsis, el dibujante ilustraba, y luego escribía los diálogos basándose en el dibujo acabado.</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i><strong>Nombres aliterativos:</strong> Personajes con nombre y apellido con la misma letra inicial (Peter Parker, Loki Laufeyson, Matt Murdock, Stephen Strange, Bruce Banner, Reed Richards, Otto Octavius, etc.).</li>
                         </ul>
                     </div>
                 </div>
@@ -126,11 +145,17 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Esta página fue hecha con ❤️ por skDev</p></div>
-            <div class="container px-4"><p class="m-0 text-center text-white">2021</p></div>
+            <div class="container px-4">
+                <p class="m-0 text-center text-white">Esta página fue hecha con <span class="text-danger">❤️</span> por skDev</p>
+                <p class="m-0 text-center text-white">&copy; <span id="currentYear">2021</span> - Tributo a Stan Lee. Excelsior!</p>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome for icons -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!-- AOS Animation Library JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>

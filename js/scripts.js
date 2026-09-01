@@ -31,30 +31,55 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Initialize AOS Animation Library
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 50
+        });
+    }
+
+    // Update footer year dynamically
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+    // Get the back-to-top button with null check
+    const mybutton = document.getElementById("btn-back-to-top");
+    
+    if (mybutton) {
+        // Show/hide button with debounce for performance
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    if (
+                        document.body.scrollTop > 500 ||
+                        document.documentElement.scrollTop > 500
+                    ) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        // Add click event listener
+        mybutton.addEventListener("click", backToTop);
+    }
+
+    // Smooth scroll to top function
+    function backToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
 });
-
-//Obtener el botón
-let mybutton = document.getElementById("btn-back-to-top");
-
-// Cuando el usuario se desplace 20px desde el tope del documento, muestra el botón
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// Cuando el usuario da click, va hacia el tope del documento
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}

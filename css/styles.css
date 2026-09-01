@@ -11294,3 +11294,138 @@ section {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
+/* Custom styles for Stan Lee Tribute Page */
+
+/* Button back to top enhanced */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 99;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#btn-back-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+#btn-back-to-top img {
+  filter: brightness(0) invert(1);
+}
+
+/* Section spacing */
+section {
+  padding: 80px 0;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* List styling improvements */
+.list-unstyled li {
+  transition: color 0.2s ease;
+}
+
+.list-unstyled li:hover {
+  color: #0d6efd;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive image improvements */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Primary color customization */
+.text-primary {
+  color: #0d6efd !important;
+}
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+/* Animation delays for staggered effects */
+[data-aos-delay="100"] {
+  animation-delay: 0.1s;
+}
+
+[data-aos-delay="200"] {
+  animation-delay: 0.2s;
+}
+
+[data-aos-delay="300"] {
+  animation-delay: 0.3s;
+}
+
+/* Footer improvements */
+footer p {
+  line-height: 1.8;
+}
+
+/* Navigation improvements */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #btn-back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  #btn-back-to-top {
+    display: none !important;
+  }
+  
+  .navbar {
+    display: none;
+  }
+}

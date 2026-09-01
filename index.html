@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Stanley Martin Lieber (Manhattan, Nueva York, 28 de diciembre de 1922 - Los Ángeles, California, 12 de noviembre de 2018), más conocido como Stan Lee, fue un escritor y editor de cómics estadounidense, creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más." />
         <meta name="author" content="skDev" />
-        <meta name="keywords" content="Stan Lee, Marvel Comics, Spider-Man, X-Men, Avengers, superhero, cómics" />
+        <meta name="keywords" content="Stan Lee, Marvel Comics, Spider-Man, X-Men, Avengers, superhero, cómics, MCU, cameos" />
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -21,10 +21,14 @@
         <meta name="twitter:description" content="Un homenaje al legendario creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más héroes de Marvel." />
         <meta name="twitter:image" content="assets/Stan_Lee_in_the_army.jpg" />
         
-        <title>Tributo a Stan Lee - El Creador de Sueños</title>
+        <title>Tributo a Stan Lee - El Creador de Sueños | Excelsior!</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- AOS Animation Library CSS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- Lightbox CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -32,13 +36,16 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Tributo a Stan Lee</a>
+                <a class="navbar-brand" href="#page-top"><i class="fas fa-mask me-2"></i>Tributo a Stan Lee</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#biografia">Biografía</a></li>
                         <li class="nav-item"><a class="nav-link" href="#obras">Obra</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#librosComics">Libros y Comics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#creaciones">Creaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cameos">Cameos MCU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#frases">Frases</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,10 +54,12 @@
         <header class="bg-primary bg-gradient text-white" data-aos="fade-down">
             <div class="container px-4 text-center">
                 <img src="assets/Stan_Lee_in_the_army.jpg" class="rounded img-fluid mb-4 shadow-lg" alt="Stan Lee en la armada de los Estados Unidos durante la Segunda Guerra Mundial" loading="lazy" width="600" height="400">
-                <h1 class="fw-bolder mt-4 display-4">En memoria de un creador de sueños</h1>
+                <h1 class="fw-bolder mt-4 display-4"><i class="fas fa-star me-2"></i>En memoria de un creador de sueños</h1>
                 <p class="lead">Stanley Martin Lieber (Manhattan, Nueva York, 28 de diciembre de 1922 - Los Ángeles, California, 12 de noviembre de 2018), más conocido como Stan Lee, fue un escritor y editor de cómics estadounidense, creador de Spider-Man, X-Men, Los 4 Fantásticos y muchos más héroes icónicos.</p>
-                <a class="btn btn-lg btn-light btn-primary me-2" href="#biografia" aria-label="Ver biografía de Stan Lee">¿Quién era él?</a>
-                <a class="btn btn-lg btn-outline-light" href="#obras" aria-label="Ver obras de Stan Lee">Sus creaciones</a>
+                <div class="mt-4">
+                    <a class="btn btn-lg btn-light btn-primary me-2" href="#biografia" aria-label="Ver biografía de Stan Lee"><i class="fas fa-book-open me-2"></i>¿Quién era él?</a>
+                    <a class="btn btn-lg btn-outline-light" href="#creaciones" aria-label="Ver obras de Stan Lee"><i class="fas fa-fist-raised me-2"></i>Sus creaciones</a>
+                </div>
             </div>
         </header>
         <!-- Sección biografía-->
@@ -81,6 +90,203 @@
                             <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i><strong>Método Marvel:</strong> Gran libertad a dibujantes. Lee hacía una sinopsis, el dibujante ilustraba, y luego escribía los diálogos basándose en el dibujo acabado.</li>
                             <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i><strong>Nombres aliterativos:</strong> Personajes con nombre y apellido con la misma letra inicial (Peter Parker, Loki Laufeyson, Matt Murdock, Stephen Strange, Bruce Banner, Reed Richards, Otto Octavius, etc.).</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Creaciones (Cards)-->
+        <section id="creaciones" class="py-5" data-aos="fade-up">
+            <div class="container px-4">
+                <h2 class="text-center mb-5 text-primary"><i class="fas fa-fist-raised me-2"></i>Creaciones Icónicas</h2>
+                <div class="row g-4">
+                    <!-- Spider-Man -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-spider fa-4x text-danger mb-3"></i>
+                                <h3 class="card-title">Spider-Man</h3>
+                                <p class="card-text">Peter Parker, el trepamuros amistoso creado en 1962 junto a Steve Ditko.</p>
+                                <span class="badge bg-danger">Amazing Fantasy #15</span>
+                                <span class="badge bg-secondary">1962</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- X-Men -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <i class="fas fa-xmark fa-4x text-primary mb-3"></i>
+                                <h3 class="card-title">X-Men</h3>
+                                <p class="card-text">Los hijos del átomo, mutantes creados en 1963 con Jack Kirby.</p>
+                                <span class="badge bg-primary">The X-Men #1</span>
+                                <span class="badge bg-secondary">1963</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fantastic Four -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users fa-4x text-info mb-3"></i>
+                                <h3 class="card-title">Los 4 Fantásticos</h3>
+                                <p class="card-text">La primera familia de Marvel, creada en 1961 con Jack Kirby.</p>
+                                <span class="badge bg-info text-dark">Fantastic Four #1</span>
+                                <span class="badge bg-secondary">1961</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hulk -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-dumbbell fa-4x text-success mb-3"></i>
+                                <h3 class="card-title">Hulk</h3>
+                                <p class="card-text">Bruce Banner, el gigante esmeralda creado en 1962 con Jack Kirby.</p>
+                                <span class="badge bg-success">The Incredible Hulk #1</span>
+                                <span class="badge bg-secondary">1962</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Iron Man -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <i class="fas fa-robot fa-4x text-warning mb-3"></i>
+                                <h3 class="card-title">Iron Man</h3>
+                                <p class="card-text">Tony Stark, el hombre de acero creado en 1963 con Larry Lieber y Don Heck.</p>
+                                <span class="badge bg-warning text-dark">Tales of Suspense #39</span>
+                                <span class="badge bg-secondary">1963</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thor -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <i class="fas fa-hammer fa-4x text-primary mb-3"></i>
+                                <h3 class="card-title">Thor</h3>
+                                <p class="card-text">El dios del trueno creado en 1962 con Larry Lieber y Jack Kirby.</p>
+                                <span class="badge bg-primary">Journey into Mystery #83</span>
+                                <span class="badge bg-secondary">1962</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Black Panther -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-cat fa-4x text-dark mb-3"></i>
+                                <h3 class="card-title">Black Panther</h3>
+                                <p class="card-text">T'Challa, el rey de Wakanda creado en 1966 con Jack Kirby.</p>
+                                <span class="badge bg-dark">Fantastic Four #52</span>
+                                <span class="badge bg-secondary">1966</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Doctor Strange -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <i class="fas fa-eye fa-4x text-primary mb-3"></i>
+                                <h3 class="card-title">Doctor Strange</h3>
+                                <p class="card-text">Stephen Strange, el hechicero supremo creado en 1963 con Steve Ditko.</p>
+                                <span class="badge bg-primary">Strange Tales #110</span>
+                                <span class="badge bg-secondary">1963</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Daredevil -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm comic-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mask fa-4x text-danger mb-3"></i>
+                                <h3 class="card-title">Daredevil</h3>
+                                <p class="card-text">Matt Murdock, el hombre sin miedo creado en 1964 con Bill Everett.</p>
+                                <span class="badge bg-danger">Daredevil #1</span>
+                                <span class="badge bg-secondary">1964</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,24 +344,258 @@
             </div>
         </section>
 
+        <!-- Sección Cameos MCU-->
+        <section id="cameos" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container px-4">
+                <h2 class="text-center mb-5 text-primary"><i class="fas fa-film me-2"></i>Cameos en el MCU</h2>
+                <p class="text-center lead mb-4">Stan Lee hizo cameos memorables en casi todas las películas del Universo Cinematográfico de Marvel. ¡Aquí están algunos de los más icónicos!</p>
+                <div class="row g-4">
+                    <!-- Iron Man -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="100">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger"><i class="fas fa-video me-2"></i>Iron Man (2008)</h5>
+                                <p class="card-text">Aparece como Larry King en una fiesta benéfica.</p>
+                                <span class="badge bg-secondary">Tony Stark lo confunde con Hugh Hefner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The Incredible Hulk -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="200">
+                            <div class="card-body">
+                                <h5 class="card-title text-success"><i class="fas fa-video me-2"></i>The Incredible Hulk (2008)</h5>
+                                <p class="card-text">Bebiendo un refresco contaminado con la sangre de Bruce Banner.</p>
+                                <span class="badge bg-danger">¡Cameo peligroso!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Iron Man 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="300">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="fas fa-video me-2"></i>Iron Man 2 (2010)</h5>
+                                <p class="card-text">Aparece como Larry King disfrazado en el Monaco Grand Prix.</p>
+                                <span class="badge bg-info text-dark">¡Otro Larry King!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thor -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="100">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary"><i class="fas fa-video me-2"></i>Thor (2011)</h5>
+                                <p class="card-text">Conductor de una camioneta que intenta robar el martillo de Thor.</p>
+                                <span class="badge bg-warning text-dark">¡No pudo ni moverlo!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Captain America: The First Avenger -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="200">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger"><i class="fas fa-video me-2"></i>Captain America (2011)</h5>
+                                <p class="card-text">General que asiste a la exposición de tecnología de Howard Stark.</p>
+                                <span class="badge bg-secondary">Confunde a Steve con un cobarde</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The Avengers -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="300">
+                            <div class="card-body">
+                                <h5 class="card-title text-info"><i class="fas fa-video me-2"></i>The Avengers (2012)</h5>
+                                <p class="card-text">Jugando ajedrez en Central Park durante la batalla de Nueva York.</p>
+                                <span class="badge bg-danger">"¿Superhéroes en Nueva York? ¡Ja!"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Spider-Man: Homecoming -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="100">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger"><i class="fas fa-video me-2"></i>Spider-Man: Homecoming (2017)</h5>
+                                <p class="card-text">Vecino llamado Gary que ve a Spider-Man desde su ventana.</p>
+                                <span class="badge bg-warning text-dark">"¡Tengo ojos!"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Black Panther -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="200">
+                            <div class="card-body">
+                                <h5 class="card-title text-success"><i class="fas fa-video me-2"></i>Black Panther (2018)</h5>
+                                <p class="card-text">Cliente en un casino de Corea del Sur.</p>
+                                <span class="badge bg-secondary">Apuesta contra T'Challa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Avengers: Infinity War -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="300">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger"><i class="fas fa-video me-2"></i>Avengers: Infinity War (2018)</h5>
+                                <p class="card-text">Conductor de autobús escolar que se transforma al ver a Thanos.</p>
+                                <span class="badge bg-danger">Último cameo en vida</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Captain Marvel -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="fas fa-video me-2"></i>Captain Marvel (2019)</h5>
+                                <p class="card-text">Leyendo el guion de "Mallrats" en el tren.</p>
+                                <span class="badge bg-info text-dark">Cameo póstumo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Avengers: Endgame -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="200">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary"><i class="fas fa-video me-2"></i>Avengers: Endgame (2019)</h5>
+                                <p class="card-text">Conductor de coche clásico en los años 70.</p>
+                                <span class="badge bg-success">"¡Hail Hydra!" (en broma)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Guardians of the Galaxy Vol. 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm cameo-card" data-aos="flip-left" data-aos-delay="300">
+                            <div class="card-body">
+                                <h5 class="card-title text-info"><i class="fas fa-video me-2"></i>Guardians Vol. 2 (2017)</h5>
+                                <p class="card-text">Miembro de los Observadores hablando con alienígenas.</p>
+                                <span class="badge bg-warning text-dark">Cameo espacial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Galería-->
+        <section id="galeria" class="py-5" data-aos="fade-up">
+            <div class="container px-4">
+                <h2 class="text-center mb-5 text-primary"><i class="fas fa-images me-2"></i>Galería de Imágenes</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <a href="assets/Stan_Lee_in_the_army.jpg" data-lightbox="stan-gallery" data-title="Stan Lee en la armada">
+                            <img src="assets/Stan_Lee_in_the_army.jpg" class="img-fluid rounded shadow gallery-img" alt="Stan Lee en la armada" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm bg-primary text-white text-center">
+                            <div class="card-body d-flex align-items-center justify-content-center">
+                                <div>
+                                    <i class="fas fa-comic-book fa-5x mb-3"></i>
+                                    <h4>Más imágenes próximamente</h4>
+                                    <p>Añade tus fotos favoritas de Stan Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm bg-dark text-white text-center">
+                            <div class="card-body d-flex align-items-center justify-content-center">
+                                <div>
+                                    <i class="fas fa-camera fa-5x mb-3"></i>
+                                    <h4>Sube tus fotos</h4>
+                                    <p>Comparte tu colección de Stan Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Frases Célebres-->
+        <section id="frases" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container px-4">
+                <h2 class="text-center mb-5 text-primary"><i class="fas fa-quote-left me-2"></i>Frases Célebres</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-white p-4 rounded shadow-sm" data-aos="fade-right">
+                            <p class="mb-3 fst-italic">"Con gran poder, viene una gran responsabilidad."</p>
+                            <footer class="blockquote-footer text-primary">Stan Lee</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-white p-4 rounded shadow-sm" data-aos="fade-left">
+                            <p class="mb-3 fst-italic">"Excelsior! Siempre hacia arriba, nunca te rindas."</p>
+                            <footer class="blockquote-footer text-primary">Stan Lee</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-white p-4 rounded shadow-sm" data-aos="fade-right" data-aos-delay="100">
+                            <p class="mb-3 fst-italic">"Los cómics son arte. Y el arte es para todos."</p>
+                            <footer class="blockquote-footer text-primary">Stan Lee</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-white p-4 rounded shadow-sm" data-aos="fade-left" data-aos-delay="100">
+                            <p class="mb-3 fst-italic">"Siempre me gustó crear personajes que fueran humanos, con problemas reales."</p>
+                            <footer class="blockquote-footer text-primary">Stan Lee</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-white p-4 rounded shadow-sm" data-aos="fade-right" data-aos-delay="200">
+                            <p class="mb-3 fst-italic">"El universo de Marvel es un espejo de nuestro propio mundo."</p>
+                            <footer class="blockquote-footer text-primary">Stan Lee</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-white p-4 rounded shadow-sm" data-aos="fade-left" data-aos-delay="200">
+                            <p class="mb-3 fst-italic">"Nunca subestimes el poder de una buena historia."</p>
+                            <footer class="blockquote-footer text-primary">Stan Lee</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Botón ir hacia arriba -->
-        <button type="button" class="btn btn-primary btn-floating btn-sm" id="btn-back-to-top">
-            <img src="assets/arrow_upward.png" alt="Scroll up">
+        <button type="button" class="btn btn-primary btn-floating btn-lg rounded-circle shadow" id="btn-back-to-top" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
         </button>
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-4">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-white"><i class="fas fa-mask me-2"></i>Tributo a Stan Lee</h5>
+                        <p class="text-white-50">Un homenaje al creador de sueños que nos enseñó que cualquiera puede ser un héroe.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-white">Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#biografia" class="text-white-50 text-decoration-none">Biografía</a></li>
+                            <li><a href="#creaciones" class="text-white-50 text-decoration-none">Creaciones</a></li>
+                            <li><a href="#cameos" class="text-white-50 text-decoration-none">Cameos</a></li>
+                            <li><a href="#frases" class="text-white-50 text-decoration-none">Frases</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-white">Redes Sociales</h5>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" class="text-white me-3" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-white">
                 <p class="m-0 text-center text-white">Esta página fue hecha con <span class="text-danger">❤️</span> por skDev</p>
-                <p class="m-0 text-center text-white">&copy; <span id="currentYear">2021</span> - Tributo a Stan Lee. Excelsior!</p>
+                <p class="m-0 text-center text-white">&copy; <span id="currentYear">2021</span> - Tributo a Stan Lee. <strong class="text-warning">Excelsior!</strong></p>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Font Awesome for icons -->
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <!-- AOS Animation Library JS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Lightbox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>

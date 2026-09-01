@@ -1,1 +1,48 @@
-(css/styles.css, index.html, js/scripts.js are all source code files, no build artifacts, dependencies, or temp files in the changes)
+```gitignore
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
+*.class
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Build directories
+dist/
+build/
+target/
+*.egg-info/
+
+# Caches
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+.gradle/
+.cargo/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+```
